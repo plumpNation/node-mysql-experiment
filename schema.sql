@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `test`;
+
+USE `test`;
+
+CREATE TABLE IF NOT EXISTS `titles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+)
